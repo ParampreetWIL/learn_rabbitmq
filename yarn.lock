@@ -2,49 +2,491 @@
 # yarn lockfile v1
 
 
-turbo-darwin-64@2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/turbo-darwin-64/-/turbo-darwin-64-2.1.2.tgz#a694b4db22ab04a2d67b3b2c96fc11780af1c8ee"
-  integrity sha512-3TEBxHWh99h2yIzkuIigMEOXt/ItYQp0aPiJjPd1xN4oDcsKK5AxiFKPH9pdtfIBzYsY59kQhZiFj0ELnSP7Bw==
+"@acuminous/bitsyntax@^0.1.2":
+  version "0.1.2"
+  dependencies:
+    buffer-more-ints "~1.0.0"
+    debug "^4.3.4"
+    safe-buffer "~5.1.2"
 
-turbo-darwin-arm64@2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/turbo-darwin-arm64/-/turbo-darwin-arm64-2.1.2.tgz#5a999ce271b9643cc0e535feb9d77c4b922e6de7"
-  integrity sha512-he0miWNq2WxJzsH82jS2Z4MXpnkzn9SH8a79iPXiJkq25QREImucscM4RPasXm8wARp91pyysJMq6aasD45CeA==
+"@types/amqplib@^0.10.5":
+  version "0.10.5"
+  resolved "https://registry.npmjs.org/@types/amqplib/-/amqplib-0.10.5.tgz"
+  integrity sha512-/cSykxROY7BWwDoi4Y4/jLAuZTshZxd8Ey1QYa/VaXriMotBDoou7V/twJiOSHzU6t1Kp1AHAUXGCgqq+6DNeg==
+  dependencies:
+    "@types/node" "*"
 
-turbo-linux-64@2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/turbo-linux-64/-/turbo-linux-64-2.1.2.tgz#18e8c23d4bd8351c161994aef57f3948db3e8036"
-  integrity sha512-fKUBcc0rK8Vdqv5a/E3CSpMBLG1bzwv+Q0Q83F8fG2ZfNCNKGbcEYABdonNZkkx141Rj03cZQFCgxu3MVEGU+A==
+"@types/body-parser@*":
+  version "1.19.5"
+  dependencies:
+    "@types/connect" "*"
+    "@types/node" "*"
 
-turbo-linux-arm64@2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/turbo-linux-arm64/-/turbo-linux-arm64-2.1.2.tgz#e6879fd0a9e37d7d4080ba34ef0c32354c08c4e8"
-  integrity sha512-sV8Bpmm0WiuxgbhxymcC7wSsuxfBBieI98GegSwbr/bs1ANAgzCg93urIrdKdQ3/b31zZxQwcaP4FBF1wx1Qdg==
+"@types/connect@*":
+  version "3.4.38"
+  dependencies:
+    "@types/node" "*"
 
-turbo-windows-64@2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/turbo-windows-64/-/turbo-windows-64-2.1.2.tgz#be6b8429beba956fabcbda06402fb89d1796aa2e"
-  integrity sha512-wcmIJZI9ORT9ykHGliFE6kWRQrlH930QGSjSgWC8uFChFFuOyUlvC7ttcxuSvU9VqC7NF4C+GVAcFJQ8lTjN7g==
+"@types/express-serve-static-core@^4.17.33":
+  version "4.19.5"
+  dependencies:
+    "@types/node" "*"
+    "@types/qs" "*"
+    "@types/range-parser" "*"
+    "@types/send" "*"
 
-turbo-windows-arm64@2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/turbo-windows-arm64/-/turbo-windows-arm64-2.1.2.tgz#8d3fa5e49cd7c54d7af4efe180c608ff1f03ac45"
-  integrity sha512-zdnXjrhk7YO6CP+Q5wPueEvOCLH4lDa6C4rrwiakcWcPgcQGbVozJlo4uaQ6awo8HLWQEvOwu84RkWTdLAc/Hw==
+"@types/express@^4.17.21":
+  version "4.17.21"
+  dependencies:
+    "@types/body-parser" "*"
+    "@types/express-serve-static-core" "^4.17.33"
+    "@types/qs" "*"
+    "@types/serve-static" "*"
 
-turbo@^2.1.2:
+"@types/http-errors@*":
+  version "2.0.4"
+
+"@types/mime@^1":
+  version "1.3.5"
+
+"@types/node@*":
+  version "22.5.5"
+  resolved "https://registry.npmjs.org/@types/node/-/node-22.5.5.tgz"
+  integrity sha512-Xjs4y5UPO/CLdzpgR6GirZJx36yScjh73+2NlLlkFRSoQN8B0DpfXPdZGnvVmLRLOsqDpOfTNv7D9trgGhmOIA==
+  dependencies:
+    undici-types "~6.19.2"
+
+"@types/qs@*":
+  version "6.9.16"
+
+"@types/range-parser@*":
+  version "1.2.7"
+
+"@types/send@*":
+  version "0.17.4"
+  dependencies:
+    "@types/mime" "^1"
+    "@types/node" "*"
+
+"@types/serve-static@*":
+  version "1.15.7"
+  dependencies:
+    "@types/http-errors" "*"
+    "@types/node" "*"
+    "@types/send" "*"
+
+accepts@~1.3.8:
+  version "1.3.8"
+  dependencies:
+    mime-types "~2.1.34"
+    negotiator "0.6.3"
+
+amqplib@^0.10.4:
+  version "0.10.4"
+  dependencies:
+    "@acuminous/bitsyntax" "^0.1.2"
+    buffer-more-ints "~1.0.0"
+    readable-stream "1.x >=1.1.9"
+    url-parse "~1.5.10"
+
+array-flatten@1.1.1:
+  version "1.1.1"
+
+body-parser@1.20.3:
+  version "1.20.3"
+  dependencies:
+    bytes "3.1.2"
+    content-type "~1.0.5"
+    debug "2.6.9"
+    depd "2.0.0"
+    destroy "1.2.0"
+    http-errors "2.0.0"
+    iconv-lite "0.4.24"
+    on-finished "2.4.1"
+    qs "6.13.0"
+    raw-body "2.5.2"
+    type-is "~1.6.18"
+    unpipe "1.0.0"
+
+buffer-more-ints@~1.0.0:
+  version "1.0.0"
+
+bytes@3.1.2:
+  version "3.1.2"
+
+call-bind@^1.0.7:
+  version "1.0.7"
+  dependencies:
+    es-define-property "^1.0.0"
+    es-errors "^1.3.0"
+    function-bind "^1.1.2"
+    get-intrinsic "^1.2.4"
+    set-function-length "^1.2.1"
+
+"consumer@file:/Users/param/Desktop/learn_rabbitmq/apps/consumer":
+  version "1.0.0"
+  resolved "file:apps/consumer"
+  dependencies:
+    amqplib "^0.10.4"
+    express "^4.21.0"
+
+content-disposition@0.5.4:
+  version "0.5.4"
+  dependencies:
+    safe-buffer "5.2.1"
+
+content-type@~1.0.4, content-type@~1.0.5:
+  version "1.0.5"
+
+cookie-signature@1.0.6:
+  version "1.0.6"
+
+cookie@0.6.0:
+  version "0.6.0"
+
+core-util-is@~1.0.0:
+  version "1.0.3"
+
+debug@^4.3.4:
+  version "4.3.7"
+  dependencies:
+    ms "^2.1.3"
+
+debug@2.6.9:
+  version "2.6.9"
+  dependencies:
+    ms "2.0.0"
+
+define-data-property@^1.1.4:
+  version "1.1.4"
+  dependencies:
+    es-define-property "^1.0.0"
+    es-errors "^1.3.0"
+    gopd "^1.0.1"
+
+depd@2.0.0:
+  version "2.0.0"
+
+destroy@1.2.0:
+  version "1.2.0"
+
+dotenv@^16.4.5:
+  version "16.4.5"
+  resolved "https://registry.npmjs.org/dotenv/-/dotenv-16.4.5.tgz"
+  integrity sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==
+
+ee-first@1.1.1:
+  version "1.1.1"
+
+encodeurl@~1.0.2:
+  version "1.0.2"
+
+encodeurl@~2.0.0:
+  version "2.0.0"
+
+es-define-property@^1.0.0:
+  version "1.0.0"
+  dependencies:
+    get-intrinsic "^1.2.4"
+
+es-errors@^1.3.0:
+  version "1.3.0"
+
+escape-html@~1.0.3:
+  version "1.0.3"
+
+etag@~1.8.1:
+  version "1.8.1"
+
+express@^4.21.0:
+  version "4.21.0"
+  dependencies:
+    accepts "~1.3.8"
+    array-flatten "1.1.1"
+    body-parser "1.20.3"
+    content-disposition "0.5.4"
+    content-type "~1.0.4"
+    cookie "0.6.0"
+    cookie-signature "1.0.6"
+    debug "2.6.9"
+    depd "2.0.0"
+    encodeurl "~2.0.0"
+    escape-html "~1.0.3"
+    etag "~1.8.1"
+    finalhandler "1.3.1"
+    fresh "0.5.2"
+    http-errors "2.0.0"
+    merge-descriptors "1.0.3"
+    methods "~1.1.2"
+    on-finished "2.4.1"
+    parseurl "~1.3.3"
+    path-to-regexp "0.1.10"
+    proxy-addr "~2.0.7"
+    qs "6.13.0"
+    range-parser "~1.2.1"
+    safe-buffer "5.2.1"
+    send "0.19.0"
+    serve-static "1.16.2"
+    setprototypeof "1.2.0"
+    statuses "2.0.1"
+    type-is "~1.6.18"
+    utils-merge "1.0.1"
+    vary "~1.1.2"
+
+finalhandler@1.3.1:
+  version "1.3.1"
+  dependencies:
+    debug "2.6.9"
+    encodeurl "~2.0.0"
+    escape-html "~1.0.3"
+    on-finished "2.4.1"
+    parseurl "~1.3.3"
+    statuses "2.0.1"
+    unpipe "~1.0.0"
+
+forwarded@0.2.0:
+  version "0.2.0"
+
+fresh@0.5.2:
+  version "0.5.2"
+
+function-bind@^1.1.2:
+  version "1.1.2"
+
+get-intrinsic@^1.1.3, get-intrinsic@^1.2.4:
+  version "1.2.4"
+  dependencies:
+    es-errors "^1.3.0"
+    function-bind "^1.1.2"
+    has-proto "^1.0.1"
+    has-symbols "^1.0.3"
+    hasown "^2.0.0"
+
+gopd@^1.0.1:
+  version "1.0.1"
+  dependencies:
+    get-intrinsic "^1.1.3"
+
+has-property-descriptors@^1.0.2:
+  version "1.0.2"
+  dependencies:
+    es-define-property "^1.0.0"
+
+has-proto@^1.0.1:
+  version "1.0.3"
+
+has-symbols@^1.0.3:
+  version "1.0.3"
+
+hasown@^2.0.0:
+  version "2.0.2"
+  dependencies:
+    function-bind "^1.1.2"
+
+http-errors@2.0.0:
+  version "2.0.0"
+  dependencies:
+    depd "2.0.0"
+    inherits "2.0.4"
+    setprototypeof "1.2.0"
+    statuses "2.0.1"
+    toidentifier "1.0.1"
+
+iconv-lite@0.4.24:
+  version "0.4.24"
+  dependencies:
+    safer-buffer ">= 2.1.2 < 3"
+
+inherits@~2.0.1, inherits@2.0.4:
+  version "2.0.4"
+
+ipaddr.js@1.9.1:
+  version "1.9.1"
+
+isarray@0.0.1:
+  version "0.0.1"
+
+media-typer@0.3.0:
+  version "0.3.0"
+
+merge-descriptors@1.0.3:
+  version "1.0.3"
+
+methods@~1.1.2:
+  version "1.1.2"
+
+mime-db@1.52.0:
+  version "1.52.0"
+
+mime-types@~2.1.24, mime-types@~2.1.34:
+  version "2.1.35"
+  dependencies:
+    mime-db "1.52.0"
+
+mime@1.6.0:
+  version "1.6.0"
+
+ms@^2.1.3, ms@2.1.3:
+  version "2.1.3"
+
+ms@2.0.0:
+  version "2.0.0"
+
+negotiator@0.6.3:
+  version "0.6.3"
+
+object-inspect@^1.13.1:
+  version "1.13.2"
+
+on-finished@2.4.1:
+  version "2.4.1"
+  dependencies:
+    ee-first "1.1.1"
+
+parseurl@~1.3.3:
+  version "1.3.3"
+
+path-to-regexp@0.1.10:
+  version "0.1.10"
+
+"producer@file:/Users/param/Desktop/learn_rabbitmq/apps/producer":
+  version "1.0.0"
+  resolved "file:apps/producer"
+  dependencies:
+    amqplib "^0.10.4"
+    express "^4.21.0"
+    zod "^3.23.8"
+
+proxy-addr@~2.0.7:
+  version "2.0.7"
+  dependencies:
+    forwarded "0.2.0"
+    ipaddr.js "1.9.1"
+
+qs@6.13.0:
+  version "6.13.0"
+  dependencies:
+    side-channel "^1.0.6"
+
+querystringify@^2.1.1:
+  version "2.2.0"
+
+range-parser@~1.2.1:
+  version "1.2.1"
+
+raw-body@2.5.2:
+  version "2.5.2"
+  dependencies:
+    bytes "3.1.2"
+    http-errors "2.0.0"
+    iconv-lite "0.4.24"
+    unpipe "1.0.0"
+
+"readable-stream@1.x >=1.1.9":
+  version "1.1.14"
+  dependencies:
+    core-util-is "~1.0.0"
+    inherits "~2.0.1"
+    isarray "0.0.1"
+    string_decoder "~0.10.x"
+
+requires-port@^1.0.0:
+  version "1.0.0"
+
+safe-buffer@~5.1.2:
+  version "5.1.2"
+
+safe-buffer@5.2.1:
+  version "5.2.1"
+
+"safer-buffer@>= 2.1.2 < 3":
   version "2.1.2"
-  resolved "https://registry.yarnpkg.com/turbo/-/turbo-2.1.2.tgz#c3b2e533977055458f70cc879c3d2a334a0f2469"
-  integrity sha512-Jb0rbU4iHEVQ18An/YfakdIv9rKnd3zUfSE117EngrfWXFHo3RndVH96US3GsT8VHpwTncPePDBT2t06PaFLrw==
-  optionalDependencies:
-    turbo-darwin-64 "2.1.2"
-    turbo-darwin-arm64 "2.1.2"
-    turbo-linux-64 "2.1.2"
-    turbo-linux-arm64 "2.1.2"
-    turbo-windows-64 "2.1.2"
-    turbo-windows-arm64 "2.1.2"
+
+send@0.19.0:
+  version "0.19.0"
+  dependencies:
+    debug "2.6.9"
+    depd "2.0.0"
+    destroy "1.2.0"
+    encodeurl "~1.0.2"
+    escape-html "~1.0.3"
+    etag "~1.8.1"
+    fresh "0.5.2"
+    http-errors "2.0.0"
+    mime "1.6.0"
+    ms "2.1.3"
+    on-finished "2.4.1"
+    range-parser "~1.2.1"
+    statuses "2.0.1"
+
+serve-static@1.16.2:
+  version "1.16.2"
+  dependencies:
+    encodeurl "~2.0.0"
+    escape-html "~1.0.3"
+    parseurl "~1.3.3"
+    send "0.19.0"
+
+set-function-length@^1.2.1:
+  version "1.2.2"
+  dependencies:
+    define-data-property "^1.1.4"
+    es-errors "^1.3.0"
+    function-bind "^1.1.2"
+    get-intrinsic "^1.2.4"
+    gopd "^1.0.1"
+    has-property-descriptors "^1.0.2"
+
+setprototypeof@1.2.0:
+  version "1.2.0"
+
+side-channel@^1.0.6:
+  version "1.0.6"
+  dependencies:
+    call-bind "^1.0.7"
+    es-errors "^1.3.0"
+    get-intrinsic "^1.2.4"
+    object-inspect "^1.13.1"
+
+statuses@2.0.1:
+  version "2.0.1"
+
+string_decoder@~0.10.x:
+  version "0.10.31"
+
+toidentifier@1.0.1:
+  version "1.0.1"
+
+type-is@~1.6.18:
+  version "1.6.18"
+  dependencies:
+    media-typer "0.3.0"
+    mime-types "~2.1.24"
 
 typescript@^5.6.2:
   version "5.6.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.6.2.tgz#d1de67b6bef77c41823f822df8f0b3bcff60a5a0"
+  resolved "https://registry.npmjs.org/typescript/-/typescript-5.6.2.tgz"
   integrity sha512-NW8ByodCSNCwZeghjN3o+JX5OFH0Ojg6sadjEKY4huZ52TqbJTJnDo5+Tw98lSy63NZvi4n+ez5m2u5d4PkZyw==
+
+undici-types@~6.19.2:
+  version "6.19.8"
+  resolved "https://registry.npmjs.org/undici-types/-/undici-types-6.19.8.tgz"
+  integrity sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==
+
+unpipe@~1.0.0, unpipe@1.0.0:
+  version "1.0.0"
+
+url-parse@~1.5.10:
+  version "1.5.10"
+  dependencies:
+    querystringify "^2.1.1"
+    requires-port "^1.0.0"
+
+utils-merge@1.0.1:
+  version "1.0.1"
+
+vary@~1.1.2:
+  version "1.1.2"
+
+zod@^3.23.8:
+  version "3.23.8"
