@@ -1,0 +1,10 @@
+{
+  "name": "producer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "ParampreetWIL <parampreets.rai@thewitslab.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.6.2"
+  }
+}
